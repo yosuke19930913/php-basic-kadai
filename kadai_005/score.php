@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
    <meta charset="UTF-8">
    <title>KADAI_005</title>
@@ -22,14 +21,17 @@
 
       $total_score = $score1 + $score2 + $score3 +$score4 + $score5 + $score6 +$score7 + $score8 + $score9 + $score10;
 
-      echo "合計点: " . $total." <br> " ;
+      echo "合計点: " . $total_score." <br> " ;
 
-      $average = $total / 10;
+      $average = $total_score / 10;
 
       echo "平均点: " . $average;
 
        ?>
    </p>
+</body>
+</html>
+
 
 
    
