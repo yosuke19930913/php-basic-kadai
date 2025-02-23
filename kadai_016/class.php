@@ -21,10 +21,17 @@
                 $this->name = $name;
                 $this->price = $price;
             }
+             // メソッドを定義する
+             public function show_price(string $price) {
+                $this->price = $price;
+            }
         }
 
         // インスタンス化する
-        $food = new Food('potato', 250, );
+        $food = new Food('potato', 250 );
+
+         // メソッドにアクセスして実行する
+         $food->show_price(250);
 
         // インスタンス$userの各プロパティの値を出力する
         print_r($food);
@@ -47,79 +54,20 @@
                 $this->height = $height;
                 $this->weight = $weight;
             }
+             // メソッドを定義する
+             public function show_height(string $height) {
+                $this->height = $height;
+            }
         }
 
         // インスタンス化する
         $animal = new Animal('dog', 60, 5000 );
 
+        // メソッドにアクセスして実行する
+        $food->show_height(60);
+
         // インスタンス$userの各プロパティの値を出力する
         print_r($animal);
-        ?>
-    </p>
-
-    <p>
-        <?php
-        // クラスを定義する
-        class Product {
-            // プロパティを定義する                        
-            public $price;
-
-            // メソッドを定義する
-            public function show_price() {
-                echo $this->price . '<br>';
-            }
-
-        }
-
-        // インスタンス化する
-        $food = new Product();
-
-        // メソッドにアクセスして実行する
-        $food->show_price(250);
-    
-
-        // インスタンス化する
-        $food = new Product();
-
-        // プロパティにアクセスし、値を代入する
-        $food->price = 250;
-     
-
-        // プロパティにアクセスし、値を出力する
-        echo $food->price;
-        ?>
-    </p>
-
-    <p>
-        <?php
-        // クラスを定義する
-        class Product {
-            // プロパティを定義する                        
-            public $height;
-
-            // メソッドを定義する
-            public function show_height() {
-                echo $this->height . '<br>';
-            }
-
-        }
-
-        // インスタンス化する
-        $animal = new Product();
-
-        // メソッドにアクセスして実行する
-        $animal->show_height(60);
-    
-
-        // インスタンス化する
-        $animal = new Product();
-
-        // プロパティにアクセスし、値を代入する
-        $animal->height = 60;
-     
-
-        // プロパティにアクセスし、値を出力する
-        echo $height->height;
         ?>
     </p>
 
