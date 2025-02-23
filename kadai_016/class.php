@@ -23,7 +23,7 @@
             }
              // メソッドを定義する
              public function show_price(string $price) {
-                echo $this->price = $price;
+                echo $this->price;
             }
         }
 
@@ -31,7 +31,7 @@
         $food = new Food('potato', 250 );
 
          // メソッドにアクセスして実行する
-         $food->show_price(250);
+         $food->show_price();
 
         // インスタンス$userの各プロパティの値を出力する
         print_r($food);
@@ -56,7 +56,7 @@
             }
              // メソッドを定義する
              public function show_height(string $height) {
-                echo $this->height = $height;
+                echo $this->height;
             }
         }
 
@@ -64,7 +64,7 @@
         $animal = new Animal('dog', 60, 5000 );
 
         // メソッドにアクセスして実行する
-        $animal->show_height(60);
+        $animal->show_height();
 
         // インスタンス$userの各プロパティの値を出力する
         print_r($animal);
